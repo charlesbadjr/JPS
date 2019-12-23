@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>Jergins Services </title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"> </script>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+     <nav class="navbar navbar-dark bg-dark">
+       <a class="navbar-brand" href="/home"> Jergins Professional Services</a>
+       <form class="form-inline">
+              <a class="btn btn-outline-primary" href="/home" role="button">
+                 Home
+              </a>
+        <div style="padding-left: 10px;">
+           <a class="btn btn-outline-primary" href="/about" role="button">
+                 About Us
+           </a>
+         </div>
+         <div style="padding-left: 10px;">
+           <a class="btn btn-outline-primary" href="/portfolio" role="button">
+               Portfolio
+           </a>
+         </div>
+         <div style="padding-left: 10px;">
+           <a class="btn btn-outline-primary" href="/contact" role="button">
+               Contact
+           </a>
+         </div>
+       </form>
+     </nav>
+    <%= yield %>
+     <footer class="footer">
+       <div class="container">
+          <span class="text-muted"> Copywrite 2020: JerginsServices </span>
+       </div>
+     </footer>
+  </body>
+</html>
